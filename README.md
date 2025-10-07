@@ -11,6 +11,7 @@ This project aims to address the challenge of an imbalanced insurance dataset to
 **The project is divided into two main tasks:**
 
 Predictive Model: Develop a predictive model to identify customers likely to claim insurance.
+
 Marketing Suggestions: Provide data-driven suggestions to the insurance marketing team to improve product adoption among customers.
 
 ## Dataset
@@ -21,6 +22,7 @@ The dataset used is train.csv, which contains:
 Target Column: The target column is highly imbalanced:
 
 **Class 0 (No Claim): 96.36%**
+
 **Class 1 (Claim): 3.64%**
 
 ## Methodology
@@ -29,6 +31,7 @@ The project follows a comprehensive machine learning pipeline:
 ## Data Preprocessing:
 
 **Irrelevant Column Dropping:** The id column was dropped as it holds no predictive value for the model.
+
 **Feature Scaling:** The data was scaled using StandardScaler to ensure that all features contribute equally to the model training process.
 
 ## Addressing Data Imbalance:
@@ -46,8 +49,11 @@ Due to the significant imbalance in the target variable, several techniques were
 #### Multiple classification models were trained and evaluated on the preprocessed data, including:
 
 **Logistic Regression:** A baseline model for binary classification.
+
 **Decision Tree Classifier:** A tree-based model that showed better performance than logistic regression.
+
 **XGBoost Classifier:** A powerful gradient boosting model that yielded the best performance among traditional machine learning models.
+
 **Sequential Model (Neural Network):** To further improve predictions, a Sequential deep learning model was built with multiple dense layers and dropout layers. This model demonstrated strong performance and was selected as the final predictive solution.
 
 **Evaluation Metrics:** The models were evaluated using accuracy_score, confusion_matrix, and classification_report.
@@ -56,7 +62,7 @@ Due to the significant imbalance in the target variable, several techniques were
 
 **Data Imbalance:** The skewed distribution of the target variable was the primary challenge, leading to overfitting and poor performance in initial models like Logistic Regression.
 
-Anonymized Features: The lack of descriptive feature names prevented traditional EDA, making it difficult to gain insights into feature importance and relationships from the outset.
+**Anonymized Features:** The lack of descriptive feature names prevented traditional EDA, making it difficult to gain insights into feature importance and relationships from the outset.
 
 **High Dimensionality:** The large number of features added complexity and increased the time required for model training.
 
@@ -76,10 +82,17 @@ Anonymized Features: The lack of descriptive feature names prevented traditional
 #### The project was developed using Python and standard data science libraries:
 
 **numpy**
+
 **pandas**
+
 **seaborn**
+
 **matplotlib**
+
 **scikit-learn**
+
 **imblearn**
+
 **xgboost**
+
 **tensorflow**

@@ -37,7 +37,9 @@ The project follows a comprehensive machine learning pipeline:
 ## Addressing Data Imbalance:
 
 Due to the significant imbalance in the target variable, several techniques were explored to prevent the model from becoming biased towards the majority class (no claims).
+
 **RandomOverSampler:** This technique was applied to the training data to increase the number of samples in the minority class (claims), balancing the class distribution.
+
 **SMOTE (Synthetic Minority Over-sampling Technique):** This advanced oversampling method was used to create synthetic data points for the minority class, providing a more robust training set.
 
 ## Dimensionality Reduction:
@@ -71,10 +73,15 @@ Due to the significant imbalance in the target variable, several techniques were
 #### Based on the predictive model and data analysis, the following suggestions are provided to the insurance marketing team:
 
 **Educate Customers on Claim Process & Benefits:** Create campaigns to build trust and explain the value of the insurance by simplifying the claim process.
+
 **Target Likely Buyers:** Use the model to identify high-probability customers for targeted promotions and upselling, while using educational content for low-probability customers.
+
 **Personalize Insurance Plans:** Develop customizable plans and offer discounts to low-risk customers to encourage more sign-ups.
+
 **Incentivize First-Time Buyers:** Attract new customers with special offers and "no-claim bonus" programs to reward them for maintaining their insurance.
+
 **Address Psychological Barriers:** Use relatable storytelling in marketing campaigns to show how insurance can help during unexpected events, overcoming the belief that "it won't happen to me."
+
 **Follow Up with Non-Claimers:** Conduct surveys or analysis to understand why a large number of customers do not file claims, helping to improve product and communication strategies.
 
 ## Code & Libraries
